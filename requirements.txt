@@ -1,0 +1,4 @@
+pyyaml
+pytest
+pydantic
+pydantic-settings

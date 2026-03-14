@@ -1,0 +1,31 @@
+2026-03-12 00:38:10,520:ERROR:Something got Wrong 1
+2026-03-12 00:38:12,185:ERROR:Something got Wrong 2
+2026-03-12 00:38:14,757:ERROR:Something got Wrong 3
+2026-03-13 01:05:13,296:ERROR:Something got Wrong 1
+2026-03-13 01:05:14,881:ERROR:Something got Wrong 2
+2026-03-13 01:05:18,090:ERROR:Something got Wrong 3
+2026-03-13 01:05:30,611:INFO:Request Successed
+2026-03-13 01:07:47,830:INFO:Request Successed
+2026-03-13 01:07:57,808:ERROR:Something got Wrong 1
+2026-03-13 01:07:59,388:ERROR:Something got Wrong 2
+2026-03-13 01:08:01,994:ERROR:Something got Wrong 3
+2026-03-13 01:08:42,774:ERROR:Something got Wrong 1
+2026-03-13 01:08:44,480:ERROR:Something got Wrong 2
+2026-03-13 01:08:47,088:ERROR:Something got Wrong 3
+2026-03-13 01:10:27,745:ERROR:Something got Wrong 1
+2026-03-13 01:10:29,461:ERROR:Something got Wrong 2
+2026-03-13 01:10:32,328:ERROR:Something got Wrong 3
+2026-03-13 01:10:36,334:ERROR:All Retries Failed to the https://httpbin.org/status/500
+2026-03-13 01:11:50,220:ERROR:Something got Wrong 1 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 01:11:52,022:ERROR:Something got Wrong 2 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 01:11:54,721:ERROR:Something got Wrong 3 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 01:11:58,726:ERROR:All Retries Failed to the https://httpbin.org/status/500
+2026-03-13 17:27:43,873:ERROR:Something got Wrong 1 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 17:27:45,530:ERROR:Something got Wrong 2 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 17:27:48,184:ERROR:Something got Wrong 3 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 17:27:52,189:ERROR:All Retries Failed to the https://httpbin.org/status/500
+2026-03-13 17:28:27,624:ERROR:Something got Wrong 1 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 17:28:29,193:ERROR:Something got Wrong 2 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 17:28:31,896:ERROR:Something got Wrong 3 500 Server Error: INTERNAL SERVER ERROR for url: https://httpbin.org/status/500
+2026-03-13 17:28:35,901:ERROR:All Retries Failed to the https://httpbin.org/status/500
+2026-03-13 17:28:39,320:INFO:Request Successed
