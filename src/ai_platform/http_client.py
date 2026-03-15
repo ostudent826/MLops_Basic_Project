@@ -1,15 +1,16 @@
 import requests
 import time
-from .config import API_TIMEOUT,MAX_RETRIES,BACKOFF_MULTIPLIER,API_URL
+from .config import Settings
 import logging
 
 logging.basicConfig(filename='newlogfile.log',level=logging.INFO,
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
+settings = Settings()
 
 class httpClient:
 
-        def __init__(self, timeout=API_TIMEOUT, retries=MAX_RETRIES, backoff=BACKOFF_MULTIPLIER):
+        def __init__(self, timeout=settings.api_timeout, retries=settings.max_retries, backoff=settings.backoff_multiplier):
             self.timeout = timeout
             self.retries = retries
             self.backoff = backoff
