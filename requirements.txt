@@ -2,4 +2,4 @@ pyyaml
 pytest
 pydantic
 pydantic-settings
-tiktoken
+anthropic
