@@ -18,7 +18,7 @@ class Settings(BaseSettings):
             env_nested_delimiter="__"
 
         )
-        
+        environment: str = "dev"
         log_level: str = 'info'
         api_url: str
         api_timeout: int
@@ -40,4 +40,7 @@ class Settings(BaseSettings):
             DotEnvSettingsSource(settings_cls, (base_dir / ".env")),
             YamlConfigSettingsSource(settings_cls, (base_dir / "config.yaml"))
         )
-        
+
+def get_settings():
+    settings = Settings()
+    return settings

@@ -1,3 +1,4 @@
+environment: "dev"
 log_level : INFO
 api_timeout : 30
 api_url : https://httpbin.org/get #https://api.anthropic.com

@@ -1,11 +1,9 @@
 import requests
 import time
 from .config import Settings
-import logging
+from ai_platform.logger import get_logger
 
-logging.basicConfig(filename='newlogfile.log',level=logging.INFO,
-                    format='%(asctime)s:%(levelname)s:%(message)s')
-
+logger = get_logger(__name__)
 settings = Settings()
 
 class httpClient:
@@ -21,13 +19,13 @@ class httpClient:
                     r = requests.get(url=url,timeout=self.timeout)
                     r.raise_for_status()
 
-                    logging.info(f'Request Successed')
+                    logger.info(f'Request Successed')
                     return r.json()
                 
                 except (requests.exceptions.ConnectTimeout, requests.exceptions.HTTPError) as e:
-                    logging.error(f'Something got Wrong {attempt + 1} {e}')
+                    logger.error(f'Something got Wrong {attempt + 1} {e}')
                     time.sleep(self.backoff ** attempt)
-            logging.error(f'All Retries Failed to the {url}')
+            logger.error(f'All Retries Failed to the {url}')
             raise Exception(f'All retries failed for {url}')
 
         

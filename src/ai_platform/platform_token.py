@@ -1,5 +1,4 @@
 import math
-import anthropic
 
 def basicEstimator(text):
     return math.ceil(len(text) / 4)

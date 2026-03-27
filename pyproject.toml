@@ -1,2 +1,10 @@
-[tool.pytest.ini_options]
-pythonpath = [".","src"]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai_platform"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+where = ["src"]

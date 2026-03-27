@@ -1,0 +1,16 @@
+{"time": "2026-03-27 17:44:38,445", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-27 17:46:58,224", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 79eb62cc-349e-44f9-a7de-1fa0620e5703 Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZTmSumiwSEVkj6aQ6631'}"}
+{"time": "2026-03-27 17:46:59,692", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 4484dfe0-a949-45bc-b8f4-2f26cd4db15f Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZTmT29TQDXHnyWpzbeks'}"}
+{"time": "2026-03-27 18:11:22,706", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-27 18:11:22,710", "level": "INFO", "module": "ai_platform.llm.client", "message": "request a7a30e96-d85d-432a-980c-feb69daa5a94 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-27 18:11:22,714", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id c44464b1-539f-4f67-8172-41148c5c7587 rate limited"}
+{"time": "2026-03-27 18:11:22,717", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-27 18:14:30,677", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-27 18:14:30,681", "level": "INFO", "module": "ai_platform.llm.client", "message": "request 3400d8b6-15ea-4e92-a514-1319a028e897 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-27 18:14:30,682", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id fec0a617-e73c-4137-89fe-9a7d99ffe668 rate limited"}
+{"time": "2026-03-27 18:14:30,685", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-27 18:19:59,317", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 9a4f5ff4-13c4-406c-aa30-f8a24e0b7907 Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZToxx4TaHQ7iqGjQ8qTx'}"}
+{"time": "2026-03-27 18:21:05,037", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-27 18:21:05,041", "level": "INFO", "module": "ai_platform.llm.client", "message": "request 07d09c5a-f482-4928-bd48-c7e8fd390761 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-27 18:21:05,042", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id 5a27e483-78cc-47c3-ab42-7f60fd953ec5 rate limited"}
+{"time": "2026-03-27 18:21:05,046", "level": "INFO", "module": "test_logger", "message": "logger is working"}
