@@ -23,3 +23,9 @@
 {"time": "2026-03-28 15:02:52,833", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id 85519946-b0f1-4126-8ee9-37ad26c92e0f rate limited"}
 {"time": "2026-03-28 15:02:52,837", "level": "INFO", "module": "test_logger", "message": "logger is working"}
 {"time": "2026-03-28 15:02:52,839", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 12500 tokens"}
+{"time": "2026-03-28 20:24:09,676", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-28 20:24:09,678", "level": "INFO", "module": "ai_platform.llm.client", "message": "request b187e4c9-b1a3-4a5f-94c1-6f8c07b132cc used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-28 20:24:09,678", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id 1bad65b0-3ed1-4886-8a4d-131bd43de5b2 rate limited"}
+{"time": "2026-03-28 20:24:09,680", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-28 20:24:09,681", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 12500 tokens"}
+{"time": "2026-03-28 20:24:09,681", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
