@@ -14,3 +14,12 @@
 {"time": "2026-03-27 18:21:05,041", "level": "INFO", "module": "ai_platform.llm.client", "message": "request 07d09c5a-f482-4928-bd48-c7e8fd390761 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
 {"time": "2026-03-27 18:21:05,042", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id 5a27e483-78cc-47c3-ab42-7f60fd953ec5 rate limited"}
 {"time": "2026-03-27 18:21:05,046", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-28 14:57:57,648", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-28 14:57:57,653", "level": "INFO", "module": "ai_platform.llm.client", "message": "request 6e68288e-27eb-4454-9806-c27b30487124 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-28 14:57:57,654", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id 0e48086c-89d4-4013-8eef-68e5fd71c699 rate limited"}
+{"time": "2026-03-28 14:57:57,658", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-28 15:02:52,829", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-28 15:02:52,832", "level": "INFO", "module": "ai_platform.llm.client", "message": "request 6c32622c-4362-42d7-b8d4-b3d26a834d39 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-28 15:02:52,833", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id 85519946-b0f1-4126-8ee9-37ad26c92e0f rate limited"}
+{"time": "2026-03-28 15:02:52,837", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-28 15:02:52,839", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 12500 tokens"}

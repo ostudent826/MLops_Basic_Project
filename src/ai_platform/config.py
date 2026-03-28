@@ -25,6 +25,7 @@ class Settings(BaseSettings):
         max_retries: int
         backoff_multiplier: int
         anthropic:AnthropicSettings
+        max_user_token: int
         
         @classmethod
         def settings_customise_sources(
