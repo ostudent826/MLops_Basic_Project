@@ -8,5 +8,3 @@ max_user_token: 10000
 anthropic:
   max_tokens: 1024
   model: "claude-sonnet-4-6"
-
-

@@ -29,3 +29,68 @@
 {"time": "2026-03-28 20:24:09,680", "level": "INFO", "module": "test_logger", "message": "logger is working"}
 {"time": "2026-03-28 20:24:09,681", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 12500 tokens"}
 {"time": "2026-03-28 20:24:09,681", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:41:05,514", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:41:05,515", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:41:20,073", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:41:20,074", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:41:20,812", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:41:20,812", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:41:21,466", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:41:21,467", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:41:22,039", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:41:22,039", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:41:22,664", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Rate limit exceeded for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:41:23,208", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Rate limit exceeded for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:42:10,807", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Rate limit exceeded for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:42:12,148", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Rate limit exceeded for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:43:14,330", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:43:14,331", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-03-28 20:43:19,305", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:43:19,822", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 3018c002-2ad1-426d-a1e1-5895f97c6a01 Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVthqDNiaML7pUPSkWAS'}"}
+{"time": "2026-03-28 20:43:23,755", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:43:24,116", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 707250c6-1c5f-4de3-84dd-421105890c1a Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVti9zjKhP7cKtHXzuzh'}"}
+{"time": "2026-03-28 20:44:03,798", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:03,798", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:23,740", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:23,741", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:24,813", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:24,813", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:26,083", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:26,083", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:28,210", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:28,210", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:30,529", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:30,529", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:33,422", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Rate limit exceeded for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:42,742", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:42,742", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:44:45,392", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:44:45,392", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:45:04,854", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:45:04,855", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:45:10,281", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:45:10,281", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 14 tokens"}
+{"time": "2026-03-28 20:45:51,749", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:45:51,749", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 15 tokens"}
+{"time": "2026-03-28 20:47:19,304", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:47:19,304", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 15 tokens"}
+{"time": "2026-03-28 20:48:16,109", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:48:16,109", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 19 tokens"}
+{"time": "2026-03-28 20:49:37,223", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:49:37,223", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 19 tokens"}
+{"time": "2026-03-28 20:50:56,759", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:50:57,038", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 61a07375-12b9-4251-84a9-9735ca34c49f Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVuHYvXzW68LZKLR69fM'}"}
+{"time": "2026-03-28 20:51:22,295", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:51:22,542", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id fb285bbe-2d6f-4b1a-a3ea-dbd3bc4c87f2 Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVuKRvuQ5oNj8hdMk9YN'}"}
+{"time": "2026-03-28 20:51:23,429", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:51:23,744", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id e7e77b03-3ae4-438b-8b74-922340c0e94c Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVuKWo6cy2FYCtBeg7TH'}"}
+{"time": "2026-03-28 20:51:25,686", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:51:25,918", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id dcaa11a0-a6e3-4318-9386-0b612dcf74b0 Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVuKgPZLR1DQESukQPXL'}"}
+{"time": "2026-03-28 20:51:37,862", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-03-28 20:51:38,135", "level": "ERROR", "module": "ai_platform.llm.client", "message": "req id 3f5d98b7-f8b0-4c6d-8ded-be46887c20ad Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CZVuLad4dGxRNkVNtsznC'}"}
+{"time": "2026-03-28 20:52:45,810", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
+{"time": "2026-03-28 20:52:45,814", "level": "INFO", "module": "ai_platform.llm.client", "message": "request b18b4961-446e-4b13-80a0-b6632064b00d used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
+{"time": "2026-03-28 20:52:45,815", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id c64f974a-1758-4389-a06b-4813a2249ee7 rate limited"}
+{"time": "2026-03-28 20:52:45,818", "level": "INFO", "module": "test_logger", "message": "logger is working"}
+{"time": "2026-03-28 20:52:45,820", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 12500 tokens"}
+{"time": "2026-03-28 20:52:45,821", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}

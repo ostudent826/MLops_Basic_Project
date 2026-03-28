@@ -48,7 +48,7 @@ request_tracker_by_ip = {}
 def rate_limit_by_ip(ip: str):
     now = time.time()
     timestamps = request_tracker_by_ip.get(ip,[])
-    recent = [t for t in timestamps if now - t < 300]    
+    recent = [t for t in timestamps if now - t < 10]    
        
     if len(recent) >= 5:
         logger.warning(f"Rate limit exceeded for IP: {ip}")
