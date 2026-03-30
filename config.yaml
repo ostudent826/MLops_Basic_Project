@@ -5,6 +5,10 @@ api_url : https://httpbin.org/get #https://api.anthropic.com
 max_retries: 3
 backoff_multiplier: 2
 max_user_token: 10000
+max_tokens: 10000
 anthropic:
-  max_tokens: 1024
   model: "claude-sonnet-4-6"
+gemini:
+  model: "gemini/gemini-2.5-flash"
+chatgpt:
+  model: "openai/gpt-4o-mini"

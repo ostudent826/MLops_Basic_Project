@@ -7,9 +7,16 @@ base_dir = Path(__file__).parent.parent.parent
 
 class AnthropicSettings(BaseModel):
     api_key: str
-    model: str = "claude-sonnet-4-6"
-    max_tokens: int = 1024
-    
+    model: str = "anthropic/claude-haiku-4-5"
+
+class GeminiSettings(BaseModel):
+    api_key: str
+    model: str = "gemini/gemini-2.5-flash"
+
+class ChatgptSettings(BaseModel):
+    api_key: str
+    model: str = "openai/gpt-4o-mini"
+
 #creating setting validator
 class Settings(BaseSettings):
         model_config = SettingsConfigDict(
@@ -25,8 +32,11 @@ class Settings(BaseSettings):
         max_retries: int
         backoff_multiplier: int
         anthropic:AnthropicSettings
+        gemini:GeminiSettings
+        chatgpt:ChatgptSettings
         max_user_token: int
-        
+        max_tokens: int = 10000
+
         @classmethod
         def settings_customise_sources(
             cls,
