@@ -1,50 +1,25 @@
-{"time": "2026-03-30 21:03:51,241", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 21:03:51,257", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: AuthenticationError"}
-{"time": "2026-03-30 21:03:51,257", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 21:03:51,611", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: AuthenticationError"}
-{"time": "2026-03-30 21:03:51,611", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 21:03:51,637", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: AuthenticationError"}
-{"time": "2026-03-30 21:05:21,947", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 21:05:22,021", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: AuthenticationError: litellm.AuthenticationError: Missing Anthropic API Key - A call is being made to anthropic but no ke"}
-{"time": "2026-03-30 21:05:22,021", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 21:05:22,569", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: AuthenticationError: litellm.AuthenticationError: GeminiException - {
-  "error": {
-    "code": 400,
-    "message": "API k"}
-{"time": "2026-03-30 21:05:22,569", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 21:05:22,596", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: AuthenticationError: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must b"}
-{"time": "2026-03-30 22:37:33,640", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 22:37:33,716", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: Missing Anthropic API Key - A call is being made to anthropic but no key is set either in the environment variables or via params. Please set `ANTHROPIC_API_KEY` or `ANTHROPIC_AUTH_TOKEN` in your environment vars"}
-{"time": "2026-03-30 22:37:33,716", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 22:37:34,245", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
-  "error": {
-    "code": 400,
-    "message": "API key not valid. Please pass a valid API key.",
-    "status": "INVALID_ARGUMENT",
-    "details": [
-      {
-        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-        "reason": "API_KEY_INVALID",
-        "domain": "googleapis.com",
-        "metadata": {
-          "service": "generativelanguage.googleapis.com"
-        }
-      },
-      {
-        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
-        "locale": "en-US",
-        "message": "API key not valid. Please pass a valid API key."
-      }
-    ]
-  }
-}
-"}
-{"time": "2026-03-30 22:37:34,245", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 22:37:34,272", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"}
-{"time": "2026-03-30 22:37:52,485", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 22:37:52,562", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: Missing Anthropic API Key - A call is being made to anthropic but no key is set either in the environment variables or via params. Please set `ANTHROPIC_API_KEY` or `ANTHROPIC_AUTH_TOKEN` in your environment vars"}
-{"time": "2026-03-30 22:37:52,562", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 22:37:52,883", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
+{"time": "2026-04-01 23:23:17,292", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-01 23:23:33,031", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-01 23:25:40,792", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-01 23:25:41,208", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdgKb2s5UecXfLUuLUce"}"}
+{"time": "2026-04-01 23:38:12,689", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-01 23:38:13,084", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdhH1c1FjDsNcjXweuDf"}"}
+{"time": "2026-04-01 23:56:04,925", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-01 23:56:05,367", "level": "ERROR", "module": "ai_platform.gateway.llm_clients", "message": "API Bad Request error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdie3nB6xFpBpqP1d6Wq"}"}
+{"time": "2026-04-01 23:56:05,367", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-01 23:58:43,518", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-01 23:58:43,880", "level": "ERROR", "module": "ai_platform.gateway.llm_clients", "message": "API Bad Request error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdiqjq1ex3aS7H3oVgyu"}"}
+{"time": "2026-04-01 23:58:43,880", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-02 00:01:21,709", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:01:22,031", "level": "ERROR", "module": "ai_platform.gateway.llm_clients", "message": "API Bad Request error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdj3PkMmzARkLxvAe9kR"}"}
+{"time": "2026-04-02 00:01:22,031", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-02 00:01:55,340", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:01:55,636", "level": "ERROR", "module": "ai_platform.gateway.llm_clients", "message": "API Bad Request error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdj5sXkuLxvTgD4nxn5D"}"}
+{"time": "2026-04-02 00:01:55,636", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-02 00:02:25,787", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:02:26,253", "level": "ERROR", "module": "ai_platform.gateway.llm_clients", "message": "API Bad Request error: litellm.BadRequestError: AnthropicException - {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_011CZdj88VECUsA48E4hLnrT"}"}
+{"time": "2026-04-02 00:02:26,253", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-02 00:02:26,780", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
   "error": {
     "code": 400,
     "message": "API key not valid. Please pass a valid API key.",
@@ -67,12 +42,71 @@
   }
 }
 "}
-{"time": "2026-03-30 22:37:52,883", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 22:37:52,909", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"}
-{"time": "2026-03-30 22:39:17,864", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 22:39:17,936", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: Missing Anthropic API Key - A call is being made to anthropic but no key is set either in the environment variables or via params. Please set `ANTHROPIC_API_KEY` or `ANTHROPIC_AUTH_TOKEN` in your environment vars"}
-{"time": "2026-03-30 22:39:17,936", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 22:39:18,294", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
+{"time": "2026-04-02 00:02:26,780", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in secondary llm, moved to thrid llm"}
+{"time": "2026-04-02 00:05:48,406", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:05:50,848", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:07:43,362", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:07:45,808", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:08:25,958", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:08:25,958", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded total of 1e-11"}
+{"time": "2026-04-02 00:08:25,958", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:13:19,927", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:13:25,082", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:13:55,108", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:13:55,108", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded total of 1e-06"}
+{"time": "2026-04-02 00:13:55,108", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:14:29,344", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:14:32,682", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.001137"}
+{"time": "2026-04-02 00:14:32,682", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:16:21,101", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:16:23,991", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.001227"}
+{"time": "2026-04-02 00:16:23,991", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:16:54,276", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:16:54,276", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.001227 / limit 1e-06"}
+{"time": "2026-04-02 00:16:54,276", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:17:58,819", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:17:58,820", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.001227 / limit 1e-06"}
+{"time": "2026-04-02 00:17:58,820", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:18:19,455", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:18:19,455", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.001227 / limit 1e-06"}
+{"time": "2026-04-02 00:18:19,455", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:18:28,445", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:18:30,965", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.000747"}
+{"time": "2026-04-02 00:18:30,965", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:18:54,231", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:18:54,231", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.000747 / limit 0.0001"}
+{"time": "2026-04-02 00:18:54,231", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:19:21,443", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:19:21,444", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.000747 / limit 0.0001"}
+{"time": "2026-04-02 00:19:21,444", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:29:36,046", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:29:40,316", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.0021000000000000003"}
+{"time": "2026-04-02 00:29:40,317", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:30:03,587", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:30:06,524", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.0011099999999999999"}
+{"time": "2026-04-02 00:30:06,524", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:32:14,584", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:32:17,880", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.000852"}
+{"time": "2026-04-02 00:32:17,880", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:32:30,395", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:32:30,395", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.000852 / limit 0.0001"}
+{"time": "2026-04-02 00:32:30,395", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:32:48,485", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:32:48,485", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.000852 / limit 0.0001"}
+{"time": "2026-04-02 00:32:48,486", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:42:01,157", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:42:01,158", "level": "ERROR", "module": "ai_platform.cost", "message": "Budget limit exceeded: spent 0.000852 / limit 0.0001"}
+{"time": "2026-04-02 00:42:01,158", "level": "ERROR", "module": "ai_platform.api.router.v1", "message": "Error: Budget limit exceeded"}
+{"time": "2026-04-02 00:43:06,203", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:43:08,012", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.00044699999999999997"}
+{"time": "2026-04-02 00:43:08,012", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:43:28,693", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:43:31,576", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 0.000852"}
+{"time": "2026-04-02 00:43:31,577", "level": "INFO", "module": "ai_platform.gateway.llm_router", "message": "successful req"}
+{"time": "2026-04-02 00:45:51,347", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:45:51,741", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AnthropicException - {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZdnSCC5EZKH7YsyQYsSm"}"}
+{"time": "2026-04-02 00:45:51,741", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-02 00:45:52,284", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
   "error": {
     "code": 400,
     "message": "API key not valid. Please pass a valid API key.",
@@ -95,12 +129,12 @@
   }
 }
 "}
-{"time": "2026-03-30 22:39:18,295", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 22:39:18,322", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"}
-{"time": "2026-03-30 22:40:26,032", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 22:40:26,107", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: Missing Anthropic API Key - A call is being made to anthropic but no key is set either in the environment variables or via params. Please set `ANTHROPIC_API_KEY` or `ANTHROPIC_AUTH_TOKEN` in your environment vars"}
-{"time": "2026-03-30 22:40:26,107", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 22:40:26,452", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
+{"time": "2026-04-02 00:45:52,284", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in secondary llm, moved to thrid llm"}
+{"time": "2026-04-02 00:45:55,315", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 3.4649999999999995e-05"}
+{"time": "2026-04-02 00:46:02,895", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
+{"time": "2026-04-02 00:46:03,142", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AnthropicException - {"type":"error","error":{"type":"authentication_error","message":"invalid x-api-key"},"request_id":"req_011CZdnT2yDrTQyau5xE8oGL"}"}
+{"time": "2026-04-02 00:46:03,142", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in main llm, moved to secondary llm"}
+{"time": "2026-04-02 00:46:03,450", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
   "error": {
     "code": 400,
     "message": "API key not valid. Please pass a valid API key.",
@@ -123,40 +157,5 @@
   }
 }
 "}
-{"time": "2026-03-30 22:40:26,452", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 22:40:26,480", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"}
-{"time": "2026-03-30 22:41:35,137", "level": "INFO", "module": "ai_platform.security.validation", "message": "Request allowed for IP: 127.0.0.1"}
-{"time": "2026-03-30 22:41:35,213", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: Missing Anthropic API Key - A call is being made to anthropic but no key is set either in the environment variables or via params. Please set `ANTHROPIC_API_KEY` or `ANTHROPIC_AUTH_TOKEN` in your environment vars"}
-{"time": "2026-03-30 22:41:35,213", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in main llm, moved to secondary llm"}
-{"time": "2026-03-30 22:41:35,533", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: GeminiException - {
-  "error": {
-    "code": 400,
-    "message": "API key not valid. Please pass a valid API key.",
-    "status": "INVALID_ARGUMENT",
-    "details": [
-      {
-        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-        "reason": "API_KEY_INVALID",
-        "domain": "googleapis.com",
-        "metadata": {
-          "service": "generativelanguage.googleapis.com"
-        }
-      },
-      {
-        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
-        "locale": "en-US",
-        "message": "API key not valid. Please pass a valid API key."
-      }
-    ]
-  }
-}
-"}
-{"time": "2026-03-30 22:41:35,534", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "error was made in secondary llm, moved to thrid llm"}
-{"time": "2026-03-30 22:41:35,560", "level": "WARNING", "module": "ai_platform.gateway.llm_clients", "message": "Bad API key: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"}
-{"time": "2026-03-30 22:41:35,561", "level": "ERROR", "module": "ai_platform.gateway.router", "message": "Couldn't get any of the llm clients"}
-{"time": "2026-03-30 22:42:26,770", "level": "INFO", "module": "ai_platform.http_client", "message": "Request Successed"}
-{"time": "2026-03-30 22:42:26,775", "level": "INFO", "module": "ai_platform.llm.client", "message": "request 61feedd6-7608-4bb7-8b7e-41c72c18ed76 used total of 4500 tokens, input_tokens - 1500 and 3000 outtokens"}
-{"time": "2026-03-30 22:42:26,775", "level": "WARNING", "module": "ai_platform.llm.client", "message": "req id c564677a-dacf-408b-b0c8-64f68dcb6fd4 rate limited"}
-{"time": "2026-03-30 22:42:26,780", "level": "INFO", "module": "test_logger", "message": "logger is working"}
-{"time": "2026-03-30 22:42:26,782", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Message too long: 12500 tokens"}
-{"time": "2026-03-30 22:42:26,783", "level": "WARNING", "module": "ai_platform.security.validation", "message": "Suspicious Message, possiblity for prompt injection ignore previous instructions"}
+{"time": "2026-04-02 00:46:03,450", "level": "ERROR", "module": "ai_platform.gateway.llm_router", "message": "error was made in secondary llm, moved to thrid llm"}
+{"time": "2026-04-02 00:46:06,269", "level": "INFO", "module": "ai_platform.cost", "message": "cost per request is 3.4649999999999995e-05"}

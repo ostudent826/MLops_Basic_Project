@@ -2,7 +2,10 @@ from fastapi import APIRouter, Depends,HTTPException, Request
 from ..schemas import Chat
 from ai_platform.config import get_settings
 from ai_platform.security.validation import check_pattern,check_token_limit,rate_limit_by_ip
-from ai_platform.gateway.router import router_send_message
+from ai_platform.gateway.llm_router import router_send_message
+from ai_platform.logger import get_logger
+
+logger = get_logger(__name__)
 
 router = APIRouter(
     prefix="/api/v1",
@@ -24,4 +27,5 @@ async def send_message(request: Request, payload:Chat, settings = Depends(get_se
         ai_response = router_send_message(payload.message)
         return {"reply": ai_response}
     except Exception as e:
+        logger.error(f"Error: {e}")
         raise HTTPException(status_code=400, detail=("We're experiencing technical difficulties. Please try again later."))

@@ -36,6 +36,7 @@ class Settings(BaseSettings):
         chatgpt:ChatgptSettings
         max_user_token: int
         max_tokens: int = 10000
+        max_cost: float = 1 # curreny - $
 
         @classmethod
         def settings_customise_sources(
