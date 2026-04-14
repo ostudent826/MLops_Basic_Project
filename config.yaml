@@ -5,8 +5,13 @@ api_url : https://httpbin.org/get #https://api.anthropic.com
 max_retries: 3
 backoff_multiplier: 2
 max_user_token: 10000
-max_tokens: 50
-max_cost: 0.001
+max_tokens: 2000
+max_cost: 10
+db_store_collection: "store_default"
+db_persistent: "src/ai_platform/chromaDB"
+db_query_max_results: 2
+
+# models
 anthropic:
   model: "claude-sonnet-4-6"
 gemini:

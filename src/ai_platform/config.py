@@ -1,6 +1,7 @@
 from pathlib import Path
 from pydantic_settings import BaseSettings, YamlConfigSettingsSource, SettingsConfigDict, DotEnvSettingsSource
 from pydantic import BaseModel
+import os
 
 base_dir = Path(__file__).parent.parent.parent
 
@@ -37,6 +38,9 @@ class Settings(BaseSettings):
         max_user_token: int
         max_tokens: int = 10000
         max_cost: float = 1 # curreny - $
+        db_store_collection: str = "store_default"
+        db_persistent: str
+        db_query_max_results: int
 
         @classmethod
         def settings_customise_sources(
@@ -55,4 +59,7 @@ class Settings(BaseSettings):
 
 def get_settings():
     settings = Settings()
+    os.environ["ANTHROPIC_API_KEY"] = settings.anthropic.api_key
+    os.environ["GEMINI_API_KEY"] = settings.gemini.api_key
+    os.environ["OPENAI_API_KEY"] = settings.chatgpt.api_key
     return settings

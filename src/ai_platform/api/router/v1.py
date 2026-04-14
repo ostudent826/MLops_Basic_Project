@@ -2,8 +2,9 @@ from fastapi import APIRouter, Depends,HTTPException, Request
 from ..schemas import Chat
 from ai_platform.config import get_settings
 from ai_platform.security.validation import check_pattern,check_token_limit,rate_limit_by_ip
-from ai_platform.gateway.llm_router import router_send_message
+from ai_platform.gateway.llm_router import llm_router_send_message
 from ai_platform.logger import get_logger
+from ai_platform.rag.pipeline import rag_query
 
 logger = get_logger(__name__)
 
@@ -24,7 +25,21 @@ async def send_message(request: Request, payload:Chat, settings = Depends(get_se
     check_token_limit(payload.message)
     check_pattern(payload.message)  
     try:
-        ai_response = router_send_message(payload.message)
+        ai_response = llm_router_send_message(payload.message)
+        return {"reply": ai_response}
+    except Exception as e:
+        logger.error(f"Error: {e}")
+        raise HTTPException(status_code=400, detail=("We're experiencing technical difficulties. Please try again later."))
+
+
+@router.post("/query")
+async def rag_send_message(request:Request,payload:Chat, settings = Depends(get_settings)):
+    client_host = request.client.host
+    rate_limit_by_ip(client_host)
+    check_token_limit(payload.message)
+    check_pattern(payload.message)  
+    try:
+        ai_response = rag_query(payload.message)
         return {"reply": ai_response}
     except Exception as e:
         logger.error(f"Error: {e}")

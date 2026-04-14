@@ -6,7 +6,7 @@ from fastapi import HTTPException
 settings = get_settings()
 logger = get_logger(__name__)
 
-def router_send_message(message:str) -> str:
+def llm_router_send_message(message:str) -> str:
     
     main_model = settings.anthropic.model
     secondary_model = settings.gemini.model
