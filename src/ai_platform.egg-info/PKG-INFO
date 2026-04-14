@@ -1,3 +1,11 @@
 Metadata-Version: 2.4
 Name: ai_platform
 Version: 0.1.0
+Requires-Dist: anthropic>=0.94.1
+Requires-Dist: chromadb>=1.5.7
+Requires-Dist: fastapi[standard]>=0.135.3
+Requires-Dist: litellm>=1.83.0
+Requires-Dist: pydantic>=2.13.0
+Requires-Dist: pydantic-settings>=2.13.1
+Requires-Dist: pytest>=9.0.3
+Requires-Dist: pyyaml>=6.0.3

@@ -5,3 +5,11 @@ __pycache__/
 *.DS_Store
 chromaDB/
 *.log
+
+# Python metadata
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
