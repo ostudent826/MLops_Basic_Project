@@ -3,6 +3,7 @@ Main entry point for the AI Platform FastAPI application.
 Handles the initialization of the app and includes versioned routers.
 """
 
+from fastapi.responses import RedirectResponse
 from fastapi import FastAPI
 from ai_platform.api.router import v1
 import os
@@ -24,3 +25,9 @@ async def home():
     Root endpoint to verify the API is online.
     """
     return {"message": "Welcome to the API!"}
+
+
+# Redirect all to homepage if not found valid path
+@app.get("/{path:path}")
+async def catch_all(path: str):
+    return RedirectResponse(url="/")

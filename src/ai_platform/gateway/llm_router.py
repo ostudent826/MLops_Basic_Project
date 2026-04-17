@@ -27,21 +27,29 @@ def llm_router_send_message(message: str) -> str:
     try:
         # First Attempt: Use the primary provider
         response = send_message(main_model, message)
-        logger.info(f"successful req")
+        logger.info(f"successful req with main model {main_model}")
         return response
     except (PermissionError, ConnectionError, RuntimeError) as e:
         try:
             # Second Attempt: Primary failed, fallback to the secondary provider [cite: 13]
-            logger.error(f"error was made in main llm, moved to secondary llm")
+            logger.error(
+                f"error was made in main llm, moved to secondary llm {secondary_model}"
+            )
             response = send_message(secondary_model, message)
             return response
-        except (PermissionError, ConnectionError, RuntimeError) as e:
+        except (
+            PermissionError,
+            ConnectionError,
+            RuntimeError,
+        ) as e:
             try:
                 # Third Attempt: Secondary failed, fallback to the tertiary provider [cite: 14]
-                logger.error(f"error was made in secondary llm, moved to thrid llm")
+                logger.error(
+                    f"error was made in secondary llm, moved to thrid llm {third_model}"
+                )
                 response = send_message(third_model, message)
                 return response
             except:
                 # Critical Failure: All providers in the chain have failed
-                logger.error(f"Couldn't get any of the llm clients")
+                logger.error("Couldn't get any of the llm clients")
                 raise HTTPException

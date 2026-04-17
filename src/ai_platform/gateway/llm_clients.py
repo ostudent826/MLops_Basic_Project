@@ -59,3 +59,8 @@ def send_message(model: str, message: str) -> str:
         # Handle malformed requests or unsupported parameters [cite: 12]
         logger.error(f"API Bad Request error: {e}")
         raise RuntimeError(f"LLM API failed: {e}")
+
+    except litellm.exceptions.ServiceUnavailableError as e:
+        # Handle malformed requests or unsupported parameters [cite: 12]
+        logger.error(f"API Bad Request error: {e}")
+        raise RuntimeError(f"LLM API failed: {e}")

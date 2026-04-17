@@ -10,20 +10,20 @@ import pytest
 def test_storeDB_collection_input_blank(tmp_path):
     """Ensures a ValueError is raised when adding an empty chunk list."""
     with pytest.raises(ValueError):
-        store = StoreDB("tmpStore", db_path=str(tmp_path))
+        store = StoreDB(db_path=str(tmp_path))
         store.add_data_collection([])
 
 
 def test_storeDB_query_input_blank(tmp_path):
     """Ensures a ValueError is raised when querying with an empty string."""
     with pytest.raises(ValueError):
-        store = StoreDB("tmpStore", db_path=str(tmp_path))
+        store = StoreDB(db_path=str(tmp_path))
         store.query_data_collection("", 2)
 
 
 def test_storeDB_functionalty(tmp_path):
     """Tests the full flow of adding documents and retrieving relevant results."""
-    store = StoreDB("temp_store", db_path=str(tmp_path))
+    store = StoreDB(db_path=str(tmp_path))
     store.add_data_collection(
         [
             "How to configure F5 virtual servers",

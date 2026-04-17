@@ -3,7 +3,7 @@ Unit tests for application configuration.
 Verifies default settings and data types for environment variables.
 """
 
-from ai_platform import config, http_client
+from ai_platform import config
 
 setting = config.Settings()
 
