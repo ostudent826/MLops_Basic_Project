@@ -15,11 +15,13 @@ def load_docs_rag(doc: str):
     logger.info("chunks added to store")
 
 
-def rag_query(message: str):
+def rag_query(message: str) -> str:
     logger.info(f"RAG query received: {message[:50]}...")
     query_result = store_client.query_data_collection(message)
     chunks_text = "\n".join(query_result["documents"][0])
-    logger.info(f"retrieved {len(query_result['documents'][0])} chunks, distances: {query_result['distances'][0]}")
+    logger.info(
+        f"retrieved {len(query_result['documents'][0])} chunks, distances: {query_result['distances'][0]}"
+    )
 
     new_prompt = f"""Based on the following context, answer the user's question.
 
@@ -32,5 +34,5 @@ Question:
 
     llm_result = llm_router_send_message(new_prompt)
     logger.info("LLM response generated")
-    
+
     return llm_result
