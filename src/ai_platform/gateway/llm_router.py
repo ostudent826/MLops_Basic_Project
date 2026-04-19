@@ -33,7 +33,7 @@ def llm_router_send_message(message: str) -> str:
         try:
             # Second Attempt: Primary failed, fallback to the secondary provider [cite: 13]
             logger.error(
-                f"error was made in main llm, moved to secondary llm {secondary_model}"
+                f"error: {e} was made in main llm, moved to secondary llm {secondary_model}"
             )
             response = send_message(secondary_model, message)
             return response
@@ -45,11 +45,11 @@ def llm_router_send_message(message: str) -> str:
             try:
                 # Third Attempt: Secondary failed, fallback to the tertiary provider [cite: 14]
                 logger.error(
-                    f"error was made in secondary llm, moved to thrid llm {third_model}"
+                    f"error: {e} was made in secondary llm, moved to thrid llm {third_model}"
                 )
                 response = send_message(third_model, message)
                 return response
-            except:
+            except Exception as e:
                 # Critical Failure: All providers in the chain have failed
-                logger.error("Couldn't get any of the llm clients")
+                logger.error(f"Couldn't get any of the llm clients {e}")
                 raise HTTPException

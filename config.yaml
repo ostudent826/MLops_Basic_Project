@@ -10,6 +10,8 @@ max_cost: 10
 db_store_collection: "store_default"
 db_persistent: "src/ai_platform/chromaDB"
 db_query_max_results: 2
+chunk_size: 500
+chunk_overlap: 50
 
 # models
 anthropic:

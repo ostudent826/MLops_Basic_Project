@@ -6,6 +6,7 @@ Handles persistent storage of text chunks and performs similarity searches.
 import chromadb
 from ai_platform.config import get_settings
 from logging import getLogger
+from .schemas import ChunkToStore
 
 # Load project-wide settings and initialize logger
 settings = get_settings()
@@ -31,7 +32,7 @@ class StoreDB:
             name=settings.db_store_collection
         )
 
-    def add_data_collection(self, chunks: list):
+    def add_data_collection(self, chunks: list[ChunkToStore]):
         """
         Adds a list of text chunks to the vector database collection.
         Automatically generates IDs for each segment.
@@ -42,7 +43,16 @@ class StoreDB:
 
         # Add documents with unique identifiers (ids)
         self.chromadb_collection.add(
-            ids=[f"chunk_id_{i}" for i in range(len(chunks))], documents=chunks
+            ids=[f"{chunk.doc_id}:{chunk.chunk_index}" for chunk in chunks],
+            documents=[chunk.text for chunk in chunks],
+            metadatas=[
+                {
+                    "source": chunk.source,
+                    "chunk_index": chunk.chunk_index,
+                    "doc_id": chunk.doc_id,
+                }
+                for chunk in chunks
+            ],
         )
 
     def query_data_collection(

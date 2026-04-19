@@ -7,19 +7,30 @@ from ai_platform.rag.chunker import chunk_data
 from ai_platform.rag.rag_db import StoreDB
 from ai_platform.gateway.llm_router import llm_router_send_message
 from ai_platform.logger import get_logger
+import uuid
 
 # Initialize module logger and the vector store client
 logger = get_logger(__name__)
 store_client = StoreDB()
 
 
-def load_docs_rag(doc: str):
+def load_docs_rag(doc: str, source: str):
     """
-    Ingests a document into the system by chunking it and
-    storing the segments in the vector database.
+    Ingest a document into the vector store.
+
+    A unique doc_id (UUID) is generated per ingestion and attached to every
+    chunk. This enables grouping chunks from the same document and safely
+    deleting or re-ingesting a document later.
+
+    Args:
+        doc: The full text of the document to ingest.
+        source: Human-friendly identifier for this document (e.g. filename or topic).
+                Attached as metadata to every chunk. May not be unique — use doc_id
+                for uniqueness guarantees.
     """
-    # 1. Break down document into segments
-    chunk_data_output = chunk_data(doc)
+    # 1. Break down document into segments with adding uuid
+    doc_id = str(uuid.uuid4())
+    chunk_data_output = chunk_data(doc, source=source, doc_id=doc_id)
     logger.info(f"chunked document into {len(chunk_data_output)} chunks")
 
     # 2. Persist chunks to ChromaDB

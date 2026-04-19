@@ -72,6 +72,8 @@ class Settings(BaseSettings):
     db_store_collection: str = "store_default"
     db_persistent: str
     db_query_max_results: int
+    chunk_size: int
+    chunk_overlap: int
 
     @classmethod
     def settings_customise_sources(
