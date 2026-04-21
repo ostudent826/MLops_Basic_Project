@@ -1,19 +1,27 @@
-.env
+# Python
 __pycache__/
 *.pyc
 .venv/
-*.DS_Store
-chromaDB/
-*.log
-MLops_Project.code-workspace
 
-# Python metadata
-*.egg-info/
+# Python packaging
+src/ai_platform/*.egg-info/
 dist/
 build/
+
+# Environment & secrets
+.env
+
+# IDE / editor
+MLops_Project.code-workspace
+
+# OS
+*.DS_Store
 
 # Logs
 *.log
 
-#OldCode
+# Application data (ChromaDB persistent storage)
+db/chromadb/
+
+# Personal scratch / unused code
 unused_code/

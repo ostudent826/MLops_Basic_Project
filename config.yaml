@@ -8,7 +8,7 @@ max_user_token: 10000
 max_tokens: 2000
 max_cost: 10
 db_store_collection: "store_default"
-db_persistent: "src/ai_platform/chromaDB"
+db_persistent: "db/chromaDB"
 db_query_max_results: 2
 chunk_size: 500
 chunk_overlap: 50
